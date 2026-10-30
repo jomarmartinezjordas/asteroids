@@ -57,7 +57,7 @@ def main():
                 if shot_ind.collides_with(asteroid_ind) == True:
                     log_event("asteroid_shot")
                     pygame.sprite.Sprite.kill(shot_ind)
-                    pygame.sprite.Sprite.kill(asteroid_ind)
+                    asteroid_ind.split()
 
         screen.fill("black")
         for drawing in drawable:
